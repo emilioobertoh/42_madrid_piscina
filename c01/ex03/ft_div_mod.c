@@ -6,7 +6,7 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 17:26:59 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/05/28 17:40:14 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/05/29 08:41:17 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 		*mod = a % b;
 	}
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -42,3 +42,4 @@ int	main(void)
 	printf("Result: %d\n", div);
 	printf("Rest: %d\n", mod);
 }
+*/
