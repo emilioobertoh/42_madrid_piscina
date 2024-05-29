@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: obertoe- <eobertoe-@student.42madrid.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/29 08:53:15 by eoberto-           #+#    #+#             */
-/*   Updated: 2024/05/29 09:06:35 by skodiak          ###   ########.fr       */
+/*   Created: 2024/05/29 08:53:15 by eoberto-          #+#    #+#             */
+/*   Updated: 2024/05/29 11:04:14 by eoberto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
@@ -26,7 +26,7 @@ void	ft_putstr(char *str)
 /*
 int	main(void)
 {
-	ft_putstr("Just gettin to the station\n");
+	ft_putstr("Hola!\n");
 	return (0);
 }
 */
