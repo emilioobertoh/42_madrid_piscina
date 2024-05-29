@@ -1,39 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/28 12:00:28 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/05/29 08:39:26 by skodiak          ###   ########.fr       */
+/*   Created: 2024/05/29 08:19:13 by eoberto-          #+#    #+#             */
+/*   Updated: 2024/05/29 08:42:57 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*********nbr = 42;
+	int	temp;
+
+	temp = *a;
+	
+	if(*b != 0)
+	{
+		*a = temp / *b;
+		*b = temp % *b;
+	}
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
 {
-	int a;
-	int *ptr1, **ptr2, ***ptr3, ****ptr4, *****ptr5, ******ptr6, *******ptr7, ********ptr8, *********ptr9;
+	int	a;
+	int	b;
+	int	*aptr;
+	int	*bptr;
 
-	a = 21;
-	ptr1 = &a;
-	ptr2 = &ptr1;
-	ptr3 = &ptr2;
-	ptr4 = &ptr3;
-	ptr5 = &ptr4;
-	ptr6 = &ptr5;
-	ptr7 = &ptr6;
-	ptr8 = &ptr7;
-	ptr9 = &ptr8;
-	printf("Avant (21): %d\n", a);
-	ft_ultimate_ft(ptr9);
-	printf("Apres (42): %d\n", a);
+	a = 10;
+	b = 5;
+	aptr = &a;
+	bptr = &b;
+
+	printf("a value b4 div: %d\n", a);
+	printf("b value b4 div: %d\n", b);
+	
+	ft_ultimate_div_mod(aptr, bptr);
+
+	printf("a value after div: %d\n", a);
+	printf("b value after div: %d\n", b);
+	
+	return (0);
 }
-*/
+ 
