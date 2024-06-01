@@ -6,7 +6,7 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 08:19:13 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/05/29 08:42:57 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/05/29 11:02:32 by eoberto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	int	temp;
 
 	temp = *a;
-	
-	if(*b != 0)
+	if (*b != 0)
 	{
 		*a = temp / *b;
 		*b = temp % *b;
 	}
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -47,4 +46,4 @@ int	main(void)
 	
 	return (0);
 }
- 
+*/

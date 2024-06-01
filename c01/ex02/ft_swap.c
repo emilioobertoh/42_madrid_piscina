@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: eoberto- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/28 17:26:59 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/05/29 10:53:22 by eoberto-         ###   ########.fr       */
+/*   Created: 2024/05/28 14:53:49 by eoberto-          #+#    #+#             */
+/*   Updated: 2024/05/28 15:02:52 by eoberto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_swap(int *a, int *b)
 {
-	if (b != 0)
-	{
-		*div = a / b;
-		*mod = a % b;
-	}
+	int	swap;
+
+	swap = *a;
+	*a = *b;
+	*b = swap;
 }
 /*
 #include <stdio.h>
@@ -25,19 +25,20 @@ int	main(void)
 {
 	int	a;
 	int	b;
-	int	div;
-	int	mod;
-	int	*divptr;
-	int	*modptr;
+	int *aptr;
+	int	*bptr;
 
-	a = 10;
-	b = 5;
-	divptr = &div;
-	modptr = &mod;
+	a = 12;
+	b = 56;
+	aptr = &a;
+	bptr = &b;
 
-	ft_div_mod(a, b, divptr, modptr);
+	printf("a value: %d\n", a);
+	printf("b value: %d\n", b);
 
-	printf("Result: %d\n", div);
-	printf("Rest: %d\n", mod);
+	ft_swap(aptr, bptr);
+
+	printf("a swapped value: %d\n", a);
+	printf("b swapped value: %d\n", b);
 }
 */

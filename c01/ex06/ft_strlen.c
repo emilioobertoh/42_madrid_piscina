@@ -1,41 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/28 12:00:28 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/05/29 10:59:46 by eoberto-         ###   ########.fr       */
+/*   Created: 2024/05/29 11:38:48 by eoberto-          #+#    #+#             */
+/*   Updated: 2024/05/29 11:58:58 by eoberto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+#include <unistd.h>
+
+int	ft_strlen(char *str)
 {
-	*********nbr = 42;
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 /*
 #include <stdio.h>
 
 int	main(void)
 {
-	int a;
-	int *ptr1, **ptr2, ***ptr3, ****ptr4; 
-	int *****ptr5, ******ptr6, *******ptr7; 
-	int	********ptr8, *********ptr9;
+	char	*str;
 
-	a = 21;
-	ptr1 = &a;
-	ptr2 = &ptr1;
-	ptr3 = &ptr2;
-	ptr4 = &ptr3;
-	ptr5 = &ptr4;
-	ptr6 = &ptr5;
-	ptr7 = &ptr6;
-	ptr8 = &ptr7;
-	ptr9 = &ptr8;
-	printf("Avant (21): %d\n", a);
-	ft_ultimate_ft(ptr9);
-	printf("Apres (42): %d\n", a);
+	str = "Hola!!!!!!";
+	printf("return %d\n", ft_strlen(str));
 }
 */
