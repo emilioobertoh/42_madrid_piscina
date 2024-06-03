@@ -6,7 +6,7 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 00:27:08 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/02 08:30:59 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/06/03 12:32:32 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ int	main(void)
 	char	src[] = "Hola";
 	char	dest[5];
 
-	dest[4] = 9;
-	ft_strncpy(dest, src, 1);
+	//dest[4] = 9;
+	ft_strncpy(dest, src, 2);
 	printf("%s\n", dest);
 	return (0);
 }
