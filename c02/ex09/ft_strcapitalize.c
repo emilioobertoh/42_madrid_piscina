@@ -6,7 +6,7 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 11:36:02 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/04 12:27:39 by eoberto-         ###   ########.fr       */
+/*   Updated: 2024/06/04 18:10:43 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ char	*ft_strcapitalize(char *str)
 			str[index] -= 32;
 		else if (next == 0 && c >= 'A' && c <= 'Z')
 			str[index] += 32;
-		if (c < '0' || (c > '9' && c < 'A') || (c > 'Z' && c < 'a') || c > 122)
+		if (c < '0' || (c > '9' && c < 'A')
+			|| (c > 'Z' && c < 'a') || c > 122)
 			next = 1;
 		else
 			next = 0;
@@ -38,7 +39,7 @@ char	*ft_strcapitalize(char *str)
 
 int	main(void)
 {
-	char	str[] = "salut, comment tu vas ? 42mots quaRAnte-deux; cinquante+et+un";
+	char	str[] = "salut, comment tu vas ? 42mots quaRAnte-deux; et+un";
 
 	printf(".%s.\n", ft_strcapitalize(str));
 	return (0);
