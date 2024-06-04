@@ -6,14 +6,13 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 11:09:39 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/04 11:29:10 by eoberto-         ###   ########.fr       */
+/*   Updated: 2024/06/04 17:00:38 by eoberto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strlowcase(char *str)
 {
 	int		index;
-	char	control;
 
 	index = 0;
 	while (*(str + index) != '\0')

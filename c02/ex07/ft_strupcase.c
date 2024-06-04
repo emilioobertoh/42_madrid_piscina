@@ -6,14 +6,13 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 08:45:53 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/04 10:40:47 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/06/04 16:59:30 by eoberto-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strupcase(char *str)
 {
 	int		index;
-	char	control;
 
 	index = 0;
 	while (*(str + index) != '\0')
