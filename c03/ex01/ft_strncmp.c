@@ -6,7 +6,7 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 15:18:42 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/05 16:10:49 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/06/05 20:38:17 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,13 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	int	result;
 
-	//result = ft_strncmp("holA", "hola", 3);
 	printf("Should be negative: %d \n", ft_strncmp("holA", "hola", 4));
 	result = ft_strncmp("hola", "holA", 4);
 	printf("Should be positive: %d \n", result);
@@ -46,4 +45,4 @@ int	main(void)
 	printf("Should also be 0: %d \n", result);
 	return (0);
 }
-
+*/
