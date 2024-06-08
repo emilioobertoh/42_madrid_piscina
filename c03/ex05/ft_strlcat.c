@@ -6,12 +6,10 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 01:18:33 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/07 01:20:47 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/06/07 08:57:59 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-
-
 }
