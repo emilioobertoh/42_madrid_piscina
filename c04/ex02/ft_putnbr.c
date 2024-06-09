@@ -6,13 +6,13 @@
 /*   By: eoberto- <eoberto-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 22:36:08 by eoberto-          #+#    #+#             */
-/*   Updated: 2024/06/09 23:50:19 by skodiak          ###   ########.fr       */
+/*   Updated: 2024/06/09 23:55:25 by skodiak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(char *buffer, int idx)
+void	print_str(char *buffer, int idx)
 {
 	while (idx >= 0)
 	{
@@ -47,7 +47,7 @@ void	ft_putnbr(int nb)
 	}
 	if (negative)
 		write(1, "-", 1);
-	ft_putstr(buffer, idx);
+	print_str(buffer, idx);
 }
 //
 // int main(void)
